@@ -9,7 +9,7 @@ LinkedList::LinkedList()
 
 LinkedList::LinkedList(int data)
 {
-    LinkedList();
+    root = new node;
 
     (*root).data = data;
 

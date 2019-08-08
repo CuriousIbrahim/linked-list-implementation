@@ -2,16 +2,30 @@
 
 #include "linked-list.h"
 
-LinkedList::LinkedList(int data)
+LinkedList::LinkedList()
 {
     root = new node;
+}
+
+LinkedList::LinkedList(int data)
+{
+    LinkedList();
 
     (*root).data = data;
+
+    rootInitialized = true;
 }
 
 bool LinkedList::add(int data)
 {
     node *current = root;
+
+    // if root is empty
+    if (!rootInitialized)
+    {
+        (*current).data = data;
+        return true;
+    }
 
     while ((*current).next != nullptr)
     {

@@ -3,14 +3,14 @@
 
 #include "linked-list.h"
 
-LinkedList eliminateZeros(LinkedList LinkedList);
+LinkedList eliminateZeros(LinkedList list);
 
-LinkedList sortDescending(LinkedList LinkedList);
+LinkedList sortDescending(LinkedList list);
 
-bool checkLength(int N, LinkedList LinkedList);
+bool checkLength(int N, LinkedList list);
 
-LinkedList frontElimination(int N, LinkedList LinkedList);
+LinkedList frontElimination(int N, LinkedList list);
 
-bool havelHakimiAlgorithm(LinkedList LinkedList);
+bool havelHakimiAlgorithm(LinkedList list);
 
 #endif

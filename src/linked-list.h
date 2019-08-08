@@ -16,7 +16,7 @@ private:
     node *root;
     int length = 0;
     bool rootInitialized = false;
-    void decrementIndexesFrom(node *node);
+    void decrementIndexesFrom(node *from);
 
 public:
     LinkedList(int data);

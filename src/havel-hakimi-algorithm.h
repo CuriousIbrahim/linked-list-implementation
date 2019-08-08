@@ -1,19 +1,16 @@
 #ifndef HAVEL_HAKMI_ALGORITHM_H
 #define HAVEL_HAKMI_ALGORITHM_H
 
-#include <array>
-#include <vector>
+#include "linked-list.h"
 
-typedef std::vector<int> set;
+LinkedList eliminateZeros(LinkedList LinkedList);
 
-set eliminateZeros(set set);
+LinkedList sortDescending(LinkedList LinkedList);
 
-set sortDescending(set set);
+bool checkLength(int N, LinkedList LinkedList);
 
-bool checkLength(int N, set set);
+LinkedList frontElimination(int N, LinkedList LinkedList);
 
-set frontElimination(int N, set set);
-
-bool havelHakimiAlgorithm(set set);
+bool havelHakimiAlgorithm(LinkedList LinkedList);
 
 #endif

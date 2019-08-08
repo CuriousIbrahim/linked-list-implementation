@@ -52,6 +52,11 @@ void LinkedList::printAll()
     }
 }
 
+Iterator LinkedList::createIterator()
+{
+    return Iterator(root);
+}
+
 // testing purposes
 int main()
 {

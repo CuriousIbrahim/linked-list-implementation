@@ -12,7 +12,7 @@ public:
     Iterator(node *root);
     bool next();
     int get();
-    int update(int newData);
+    void update(int newData);
 };
 
 #endif

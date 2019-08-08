@@ -1,6 +1,8 @@
 #ifndef LINKED_LIST_H
 #define LINKED_LIST_H
 
+#include "iterator.h"
+
 struct node
 {
     int data{};
@@ -18,6 +20,7 @@ public:
     LinkedList();
     bool add(int data);
     void printAll();
+    Iterator createIterator();
 };
 
 #endif

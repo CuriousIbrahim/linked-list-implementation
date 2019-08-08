@@ -11,9 +11,11 @@ class LinkedList
 {
 private:
     node *root;
+    bool rootInitialized = false;
 
 public:
     LinkedList(int data);
+    LinkedList();
     bool add(int data);
     void printAll();
 };
